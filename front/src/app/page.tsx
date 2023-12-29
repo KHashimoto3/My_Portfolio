@@ -32,6 +32,9 @@ export default function Home() {
       <section className="contact">
         <HomeContact />
       </section>
+      <footer style={{ backgroundColor: "#ffffff" }}>
+        BBの部屋 © 2024 by BB All rights reserved.
+      </footer>
     </>
   );
 }
