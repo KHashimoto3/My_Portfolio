@@ -1,8 +1,10 @@
+import { Container } from "@mui/material";
+
 export default function HomeSkills() {
   return (
-    <>
-      <h2>スキル</h2>
+    <Container maxWidth="md">
+      <h2 style={{ textAlign: "center" }}>スキル</h2>
       <p>スキルがきます。</p>
-    </>
+    </Container>
   );
 }
