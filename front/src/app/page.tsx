@@ -6,7 +6,7 @@ import HomeSkills from "./home-sections/HomeSkills";
 
 export default function Home() {
   return (
-    <>
+    <div style={{ backgroundColor: "#f5f2e9" }}>
       <section
         className="slide-show"
         style={{
@@ -35,6 +35,6 @@ export default function Home() {
       <footer style={{ backgroundColor: "#ffffff" }}>
         BBの部屋 © 2024 by BB All rights reserved.
       </footer>
-    </>
+    </div>
   );
 }
