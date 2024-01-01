@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Stack } from "@mui/material";
 import { ActivityList } from "../types/activityList";
 
@@ -10,7 +12,7 @@ export default function ActivityCard(props: Props) {
   return (
     <div className="activity-card">
       <Box sx={{ width: "90%", height: "200px" }}>
-        <Stack direction="row" spacing={2}>
+        <Stack spacing={2}>
           <img
             src={activity.imgPath}
             alt={activity.title}
