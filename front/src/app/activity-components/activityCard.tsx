@@ -12,7 +12,7 @@ export default function ActivityCard(props: Props) {
   return (
     <div className="activity-card">
       <Box sx={{ width: "90%", height: "200px" }}>
-        <Stack spacing={2}>
+        <Stack spacing={2} textAlign={"center"}>
           <img
             src={activity.imgPath}
             alt={activity.title}
