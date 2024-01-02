@@ -9,17 +9,17 @@ export default function HomeActivities() {
     {
       id: 1,
       title: "研究",
-      imgPath: "activity-research.jpg",
+      imgPath: "sample_pc.png",
     },
     {
       id: 2,
-      title: "WEBアプリ開発",
-      imgPath: "activity-webapp-dev.jpg",
+      title: "WEBアプリ",
+      imgPath: "sample_pc.png",
     },
     {
       id: 3,
       title: "動画編集",
-      imgPath: "activity-video-edit.jpg",
+      imgPath: "sample_pc.png",
     },
   ];
 
