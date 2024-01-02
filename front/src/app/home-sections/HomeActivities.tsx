@@ -21,6 +21,11 @@ export default function HomeActivities() {
       title: "動画編集",
       imgPath: "sample_pc.png",
     },
+    {
+      id: 4,
+      title: "動画編集",
+      imgPath: "sample_pc.png",
+    },
   ];
 
   return (
