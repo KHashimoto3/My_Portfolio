@@ -21,7 +21,7 @@ export default function PortfolioCard(props: Props) {
   const { title, description, imgPath, tag } = props;
 
   const onClickFunc = () => {
-    alert("ポートフォリオ詳細ボタンが押されました。");
+    alert("申し訳ございませんが準備中です。もうしばらくお待ちください。");
   };
 
   return (
