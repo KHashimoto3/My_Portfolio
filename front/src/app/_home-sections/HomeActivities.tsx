@@ -2,7 +2,7 @@
 
 import { Box, Container, Grid } from "@mui/material";
 import { ActivityList } from "../types/activityList";
-import ActivityCard from "../activity-components/activityCard";
+import ActivityCard from "../_activity-components/activityCard";
 
 export default function HomeActivities() {
   const activities: ActivityList[] = [
