@@ -3,4 +3,5 @@ export type PortfolioList = {
   title: string;
   description: string;
   imgPath: string;
+  tag: string[];
 };

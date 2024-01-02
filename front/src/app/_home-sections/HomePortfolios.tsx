@@ -11,24 +11,28 @@ export default function HomePortfolios() {
       title: "制作物1",
       description: "制作物の説明1",
       imgPath: "/sample_pc.png",
+      tag: ["タグ1", "タグ2"],
     },
     {
       id: 2,
       title: "制作物2",
       description: "制作物の説明2",
       imgPath: "/sample_pc.png",
+      tag: ["タグ1"],
     },
     {
       id: 3,
       title: "制作物3",
       description: "制作物の説明3",
       imgPath: "/sample_pc.png",
+      tag: ["タグ1", "タグ2", "タグ3"],
     },
     {
       id: 4,
       title: "制作物4",
       description: "制作物の説明4",
       imgPath: "/sample_pc.png",
+      tag: ["タグ1", "タグ2"],
     },
   ];
 
@@ -42,6 +46,7 @@ export default function HomePortfolios() {
               title={portfolio.title}
               description={portfolio.description}
               imgPath={portfolio.imgPath}
+              tag={portfolio.tag}
             />
           </Grid>
         ))}
