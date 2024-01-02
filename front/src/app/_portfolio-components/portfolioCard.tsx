@@ -2,7 +2,6 @@
 
 import {
   Card,
-  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
