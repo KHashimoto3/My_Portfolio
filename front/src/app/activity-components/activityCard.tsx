@@ -11,12 +11,20 @@ export default function ActivityCard(props: Props) {
   const { activity } = props;
   return (
     <div className="activity-card">
-      <Box sx={{ width: "90%", height: "200px" }}>
+      <Box
+        sx={{
+          width: "100%",
+          height: "200px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Stack spacing={2} textAlign={"center"}>
           <img
             src={activity.imgPath}
             alt={activity.title}
-            style={{ width: "100%" }}
+            style={{ width: "100px" }}
           />
           <h3>{activity.title}</h3>
         </Stack>
