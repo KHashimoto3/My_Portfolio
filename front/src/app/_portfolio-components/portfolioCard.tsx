@@ -17,22 +17,20 @@ export default function PortfolioCard() {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/sample_pc.png"
-          alt="portfolio image"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            カードのタイトル
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            カードの説明文
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <CardMedia
+        component="img"
+        height="140"
+        image="/sample_pc.png"
+        alt="portfolio image"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          カードのタイトル
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          カードの説明文
+        </Typography>
+      </CardContent>
       <CardActions>
         <PortfolioDetailButton onClick={onClickFunc} />
       </CardActions>
