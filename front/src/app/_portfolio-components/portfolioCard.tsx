@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Button,
   Card,
   CardActionArea,
   CardActions,
@@ -9,8 +8,13 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import PortfolioDetailButton from "../_ui/button/portfolioDetailButton";
 
 export default function PortfolioCard() {
+  const onClickFunc = () => {
+    alert("ポートフォリオ詳細ボタンが押されました。");
+  };
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -30,9 +34,7 @@ export default function PortfolioCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <PortfolioDetailButton onClick={onClickFunc} />
       </CardActions>
     </Card>
   );
