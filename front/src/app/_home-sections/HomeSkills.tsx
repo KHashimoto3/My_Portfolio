@@ -1,58 +1,44 @@
 "use client";
 
-import { Box, Container, Grid } from "@mui/material";
-import SkillCard from "../_skill-components/skillCard";
-import { SkillList } from "../types/skillList";
+import { Button, Container, Modal } from "@mui/material";
+import SkillModalInner from "../_skill-components/skillModalInner";
+import { useState } from "react";
+import { SkillKinds } from "../types/skillKinds";
 
 export default function HomeSkills() {
-  const sampleSkillList: SkillList[] = [
-    {
-      id: 1,
-      name: "スキル1",
-      howToUse: "スキル1の使い方",
-      image: "/sample_pc.png",
-      rate: 3,
-    },
-    {
-      id: 2,
-      name: "スキル2",
-      howToUse: "スキル2の使い方",
-      image: "/sample_pc.png",
-      rate: 4,
-    },
-    {
-      id: 3,
-      name: "スキル3",
-      howToUse: "スキル3の使い方",
-      image: "/sample_pc.png",
-      rate: 5,
-    },
-    {
-      id: 4,
-      name: "スキル4",
-      howToUse: "スキル4の使い方",
-      image: "/sample_pc.png",
-      rate: 2,
-    },
-  ];
+  const [skillModalOpen, setSkillModalOpen] = useState<boolean>(false);
+
+  const [skillKinds, setSkillKinds] = useState<SkillKinds>("web");
+
+  const openSkillModal = (kinds: SkillKinds) => {
+    setSkillKinds(kinds);
+    setSkillModalOpen(true);
+  };
+
+  const closeSkillModal = () => {
+    setSkillModalOpen(false);
+  };
 
   return (
     <Container maxWidth="md">
       <h2 style={{ textAlign: "center" }}>~Skills~</h2>
-      <Box sx={{ width: "100%", height: "auto" }}>
-        <Grid container spacing={2}>
-          {sampleSkillList.map((skill) => (
-            <Grid item xs={4} key={skill.id}>
-              <SkillCard
-                name={skill.name}
-                howToUse={skill.howToUse}
-                image={skill.image}
-                rate={skill.rate}
-              />
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={() => openSkillModal("web")}
+      >
+        WEB開発
+      </Button>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={() => openSkillModal("movie")}
+      >
+        動画制作
+      </Button>
+      <Modal open={skillModalOpen} onClose={closeSkillModal}>
+        <SkillModalInner kinds={skillKinds} />
+      </Modal>
     </Container>
   );
 }
