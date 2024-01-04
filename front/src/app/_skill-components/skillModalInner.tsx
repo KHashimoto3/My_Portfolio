@@ -37,7 +37,6 @@ export default function SkillModalInner(props: Props) {
     width: 800,
     height: "80%",
     bgcolor: "background.paper",
-    border: "2px solid #000",
     boxShadow: 24,
     p: 4,
     overflowY: "scroll",
