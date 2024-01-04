@@ -40,6 +40,7 @@ export default function SkillModalInner(props: Props) {
     border: "2px solid #000",
     boxShadow: 24,
     p: 4,
+    overflowY: "scroll",
   };
 
   const sampleSkillList: SkillList[] = [
