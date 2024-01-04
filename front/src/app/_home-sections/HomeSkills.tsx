@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Box,
-  Button,
-  Container,
-  Modal,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Container, Modal, Stack, Typography } from "@mui/material";
 import SkillModalInner from "../_skill-components/skillModalInner";
 import { useState } from "react";
 import { SkillKinds } from "../types/skillKinds";
