@@ -25,7 +25,9 @@ export default function SkillCard(props: Props) {
         }}
       >
         <Stack spacing={2} textAlign={"center"}>
-          <img src={image} alt={"PC"} style={{ width: "100px" }} />
+          <Box sx={{ width: "100%", height: "100px", textAlign: "center" }}>
+            <img src={image} alt={"PC"} style={{ width: "100px" }} />
+          </Box>
           <h3>{name}</h3>
           <Rating name="read-only" value={rate} readOnly />
           <p>{howToUse}</p>
