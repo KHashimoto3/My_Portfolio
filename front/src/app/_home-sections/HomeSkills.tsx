@@ -1,6 +1,13 @@
 "use client";
 
-import { Box, Button, Container, Modal, Stack } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Modal,
+  Stack,
+  Typography,
+} from "@mui/material";
 import SkillModalInner from "../_skill-components/skillModalInner";
 import { useState } from "react";
 import { SkillKinds } from "../types/skillKinds";
@@ -23,7 +30,10 @@ export default function HomeSkills() {
   return (
     <Container maxWidth="sm">
       <h2 style={{ textAlign: "center" }}>~Skills~</h2>
-      <Stack spacing={2} textAlign={"center"}>
+      <Typography variant="body1" component={"p"}>
+        ご覧になりたいスキルのカテゴリを選択してください。詳細がモーダルで開きます。
+      </Typography>
+      <Stack spacing={2} textAlign={"center"} sx={{ marginTop: "20px" }}>
         <OpenSkillModalButton
           label="WEB開発"
           onClick={() => openSkillModal("web")}
