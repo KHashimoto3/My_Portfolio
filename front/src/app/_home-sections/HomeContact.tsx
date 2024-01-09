@@ -1,18 +1,33 @@
-import { Container, Typography } from "@mui/material";
+"use client";
+
+import { Button, Container, Stack, Typography } from "@mui/material";
+
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export default function HomeContact() {
   return (
-    <Container maxWidth="md" sx={{ height: "200px" }}>
+    <Container maxWidth="sm" sx={{ height: "200px" }}>
       <h2 style={{ textAlign: "center" }}>~Contact~</h2>
       <Typography variant="body1" component={"p"}>
         ご興味を持っていただきありがとうございます。
-        <br />
-        お問い合わせは
-        <a href="https://forms.gle/KVG7xSB1c8d7MDmB9" target="_blank">
-          こちら
-        </a>
-        からお願いします。
       </Typography>
+      <Stack spacing={2} textAlign={"center"} sx={{ marginTop: "20px" }}>
+        <Button
+          variant="contained"
+          sx={{
+            marginRadius: "10px",
+            fontSize: "14pt",
+            maxWidth: "100%",
+            borderRadius: "30px",
+            color: "white",
+            background: "linear-gradient(#3d7dc8 30%, #c57de9 90%)",
+          }}
+          onClick={() => window.open("https://forms.gle/KVG7xSB1c8d7MDmB9")}
+        >
+          <MailOutlineIcon />
+          お問い合わせ
+        </Button>
+      </Stack>
     </Container>
   );
 }
