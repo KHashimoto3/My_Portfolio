@@ -6,7 +6,11 @@ type Props = {
 
 const typographyStyle = {
   textAlign: "center",
-  color: "#0099d1",
+  color: "#006fd1",
+  marginTop: "30px",
+  marginBottom: "10px",
+  fontStyle: "italic",
+  fontWeight: "lighter",
 };
 
 export default function SectionTitle(props: Props) {
