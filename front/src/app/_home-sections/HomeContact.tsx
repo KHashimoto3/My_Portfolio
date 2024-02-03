@@ -3,11 +3,12 @@
 import { Button, Container, Stack, Typography } from "@mui/material";
 
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import SectionTitle from "../_ui/text/sectionTitle";
 
 export default function HomeContact() {
   return (
     <Container maxWidth="sm" sx={{ height: "200px" }}>
-      <h2 style={{ textAlign: "center" }}>~Contact~</h2>
+      <SectionTitle title="~Contact~" />
       <Typography variant="body1" component={"p"}>
         ご興味を持っていただきありがとうございます。
       </Typography>

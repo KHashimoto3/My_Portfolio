@@ -3,6 +3,7 @@
 import { Container, Grid } from "@mui/material";
 import PortfolioCard from "../_portfolio-components/portfolioCard";
 import { PortfolioList } from "../types/portfolioList";
+import SectionTitle from "../_ui/text/sectionTitle";
 
 export default function HomePortfolios() {
   const samplePortfilioList: PortfolioList[] = [
@@ -38,7 +39,7 @@ export default function HomePortfolios() {
 
   return (
     <Container maxWidth="md">
-      <h2 style={{ textAlign: "center" }}>~Portfolios~</h2>
+      <SectionTitle title="~Portfolios~" />
       <Grid container spacing={2}>
         {samplePortfilioList.map((portfolio) => (
           <Grid item xs={4} key={portfolio.id}>

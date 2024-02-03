@@ -5,6 +5,7 @@ import SkillModalInner from "../_skill-components/skillModalInner";
 import { useState } from "react";
 import { SkillKinds } from "../types/skillKinds";
 import OpenSkillModalButton from "../_ui/button/openSkillModalButton";
+import SectionTitle from "../_ui/text/sectionTitle";
 
 export default function HomeSkills() {
   const [skillModalOpen, setSkillModalOpen] = useState<boolean>(false);
@@ -22,7 +23,7 @@ export default function HomeSkills() {
 
   return (
     <Container maxWidth="sm">
-      <h2 style={{ textAlign: "center" }}>~Skills~</h2>
+      <SectionTitle title="~Skills~" />
       <Typography variant="body1" component={"p"}>
         ご覧になりたいスキルのカテゴリを選択してください。詳細がモーダルで開きます。
       </Typography>

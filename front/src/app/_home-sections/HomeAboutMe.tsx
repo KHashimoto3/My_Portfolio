@@ -1,11 +1,12 @@
 "use client";
 
 import { Box, Container, Grid, Typography } from "@mui/material";
+import SectionTitle from "../_ui/text/sectionTitle";
 
 export default function HomeAboutMe() {
   return (
     <Container maxWidth="md">
-      <h2 style={{ textAlign: "center" }}>~About me~</h2>
+      <SectionTitle title="~About Me~" />
       <Grid container spacing={2}>
         <Grid item xs={6}>
           <Box
