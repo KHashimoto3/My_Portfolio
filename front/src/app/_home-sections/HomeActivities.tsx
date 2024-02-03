@@ -3,6 +3,7 @@
 import { Box, Container, Grid } from "@mui/material";
 import { ActivityList } from "../types/activityList";
 import ActivityCard from "../_activity-components/activityCard";
+import SectionTitle from "../_ui/text/sectionTitle";
 
 export default function HomeActivities() {
   const activities: ActivityList[] = [
@@ -30,7 +31,7 @@ export default function HomeActivities() {
 
   return (
     <Container maxWidth="md">
-      <h2 style={{ textAlign: "center" }}>~Activities~</h2>
+      <SectionTitle title="~Activities~" />
       <Box sx={{ width: "100%", height: "auto" }}>
         <Grid container spacing={2}>
           {activities.map((activity) => (
