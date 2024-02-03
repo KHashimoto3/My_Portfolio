@@ -6,7 +6,7 @@ import HomeSkills from "./_home-sections/HomeSkills";
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#f5f2e9" }}>
+    <div style={{ backgroundColor: "#ffffff" }}>
       <section
         className="slide-show"
         style={{
