@@ -3,7 +3,7 @@
 import { Container, Grid } from "@mui/material";
 import PortfolioCard from "../_portfolio-components/portfolioCard";
 import { PortfolioList } from "../types/portfolioList";
-import SectionTitle from "../_ui/text/sectionTitle";
+import SectionTitle from "../_ui/header/sectionTitle";
 
 export default function HomePortfolios() {
   const samplePortfilioList: PortfolioList[] = [

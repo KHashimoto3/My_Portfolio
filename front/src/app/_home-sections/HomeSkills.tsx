@@ -5,7 +5,7 @@ import SkillModalInner from "../_skill-components/skillModalInner";
 import { useState } from "react";
 import { SkillKinds } from "../types/skillKinds";
 import OpenSkillModalButton from "../_ui/button/openSkillModalButton";
-import SectionTitle from "../_ui/text/sectionTitle";
+import SectionTitle from "../_ui/header/sectionTitle";
 
 export default function HomeSkills() {
   const [skillModalOpen, setSkillModalOpen] = useState<boolean>(false);

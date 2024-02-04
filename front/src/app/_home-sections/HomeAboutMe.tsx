@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Container, Grid, Typography } from "@mui/material";
-import SectionTitle from "../_ui/text/sectionTitle";
+import SectionTitle from "../_ui/header/sectionTitle";
 
 export default function HomeAboutMe() {
   return (
