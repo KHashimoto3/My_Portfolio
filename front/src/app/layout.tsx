@@ -15,6 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="robots" content="noindex"></meta>
+      </head>
       <body className={inter.className} style={{ margin: 0 }}>
         {children}
       </body>
