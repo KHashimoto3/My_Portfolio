@@ -5,7 +5,7 @@ export type Portfolio = {
   imgPath: string;
   abstract: string;
   background: string;
-  functions: string;
+  functions: string[];
   thoughts: string[];
   stacks: string[];
   period: string;
