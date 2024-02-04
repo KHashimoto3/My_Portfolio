@@ -9,7 +9,7 @@ export type Portfolio = {
   thoughts: string[];
   stacks: string[];
   period: string;
-  position: string;
+  position: string[];
   link: string;
   githubLink: string;
 };
