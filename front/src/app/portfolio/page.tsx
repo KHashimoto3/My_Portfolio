@@ -36,11 +36,24 @@ export default function Portfolio() {
                 style={{ maxWidth: "90%" }}
               />
             </Box>
+            <StyledHeading2 title="タグ" />
+            <Typography variant="body1" component={"p"}>
+              ・サンプルのタグ1
+              <br />
+              ・サンプルのタグ2
+              <br />
+              ・サンプルのタグ3
+              <br />
+            </Typography>
           </Grid>
           <Grid item xs={6}>
             <StyledHeading2 title="概要" />
             <Typography variant="body1" component={"p"}>
               このプロダクトは、サンプルのポートフォリオです。
+            </Typography>
+            <StyledHeading2 title="背景・目的" />
+            <Typography variant="body1" component={"p"}>
+              サンプルの背景・目的
             </Typography>
             <StyledHeading2 title="機能" />
             <Typography variant="body1" component={"p"}>
@@ -50,6 +63,10 @@ export default function Portfolio() {
               <br />
               ・サンプルの機能3
               <br />
+            </Typography>
+            <StyledHeading2 title="工夫ポイント" />
+            <Typography variant="body1" component={"p"}>
+              サンプルの工夫ポイント
             </Typography>
             <StyledHeading2 title="使用技術" />
             <Typography variant="body1" component={"p"}>
