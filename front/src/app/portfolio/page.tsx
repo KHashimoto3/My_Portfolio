@@ -1,9 +1,26 @@
 "use client";
 
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Chip, Container, Grid, Typography } from "@mui/material";
 import StyledHeading2 from "../_ui/header/styledHeading2";
+import { Portfolio } from "../types/portfolio";
 
 export default function Portfolio() {
+  const samplePortfolio: Portfolio = {
+    id: 1,
+    title: "サンプル制作物",
+    tag: ["サンプルのタグ1", "サンプルのタグ2", "サンプルのタグ3"],
+    imgPath: "./sample_portfolio.jpg",
+    abstract: "このプロダクトは、サンプルのポートフォリオです。",
+    background: "サンプルの背景・目的",
+    functions: ["サンプルの機能1", "サンプルの機能2", "サンプルの機能3"],
+    stacks: ["./sample_pc.png", "./sample_pc.png", "./sample_pc.png"],
+    thoughts: ["サンプルの工夫ポイント", "サンプルの工夫ポイント2"],
+    period: "2023年1月~2023年12月",
+    position: ["サンプルの役割1", "サンプルの役割2"],
+    link: "https://example.com",
+    githubLink: "https://sample.com",
+  };
+
   return (
     <div style={{ backgroundColor: "#ffffff" }}>
       <Container maxWidth="lg">
@@ -17,7 +34,7 @@ export default function Portfolio() {
             fontWeight: "lighter",
           }}
         >
-          プロダクト名
+          {samplePortfolio.title}
         </Typography>
         <Grid container spacing={3} sx={{ marginTop: "20px" }}>
           <Grid item xs={6}>
@@ -36,64 +53,77 @@ export default function Portfolio() {
                 style={{ maxWidth: "90%" }}
               />
             </Box>
-            <StyledHeading2 title="タグ" />
-            <Typography variant="body1" component={"p"}>
-              ・サンプルのタグ1
-              <br />
-              ・サンプルのタグ2
-              <br />
-              ・サンプルのタグ3
-              <br />
-            </Typography>
           </Grid>
           <Grid item xs={6}>
+            {samplePortfolio.tag.map((tag) => (
+              <Chip label={tag} key={tag} sx={{ margin: "2px" }} />
+            ))}
             <StyledHeading2 title="概要" />
             <Typography variant="body1" component={"p"}>
-              このプロダクトは、サンプルのポートフォリオです。
+              {samplePortfolio.abstract}
             </Typography>
             <StyledHeading2 title="背景・目的" />
             <Typography variant="body1" component={"p"}>
-              サンプルの背景・目的
+              {samplePortfolio.background}
             </Typography>
             <StyledHeading2 title="機能" />
-            <Typography variant="body1" component={"p"}>
-              ・サンプルの機能1
-              <br />
-              ・サンプルの機能2
-              <br />
-              ・サンプルの機能3
-              <br />
-            </Typography>
+            <ul>
+              {samplePortfolio.functions.map((func) => (
+                <li key={func}>{func}</li>
+              ))}
+            </ul>
             <StyledHeading2 title="工夫ポイント" />
-            <Typography variant="body1" component={"p"}>
-              サンプルの工夫ポイント
-            </Typography>
+            <ul>
+              {samplePortfolio.thoughts.map((thought) => (
+                <li key={thought}>{thought}</li>
+              ))}
+            </ul>
             <StyledHeading2 title="使用技術" />
             <Typography variant="body1" component={"p"}>
-              ・サンプルの技術1
-              <br />
-              ・サンプルの技術2
-              <br />
-              ・サンプルの技術3
-              <br />
+              <Grid container spacing={1}>
+                {samplePortfolio.stacks.map((stack) => (
+                  <Grid item xs={3} key={stack}>
+                    <img
+                      src={stack}
+                      alt="stack"
+                      style={{ maxWidth: "100px" }}
+                    />
+                  </Grid>
+                ))}
+              </Grid>
             </Typography>
             <StyledHeading2 title="開発期間" />
             <Typography variant="body1" component={"p"}>
-              2023年1月~2023年12月
+              {samplePortfolio.period}
             </Typography>
             <StyledHeading2 title="役割" />
-            <Typography variant="body1" component={"p"}>
-              ・サンプルの業務1
-              <br />
-              ・サンプルの業務2
-              <br />
-              ・サンプルの業務3
-              <br />
-            </Typography>
+            <ul>
+              {samplePortfolio.position.map((position) => (
+                <li key={position}>{position}</li>
+              ))}
+            </ul>
           </Grid>
         </Grid>
         <Box sx={{ width: "100%", height: "auto", marginTop: "50px" }}>
           <StyledHeading2 title="デモ・プロダクトURL" />
+          <Typography variant="body1" component={"p"}>
+            <a
+              href={samplePortfolio.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {samplePortfolio.link}
+            </a>
+          </Typography>
+          <Typography variant="body1" component={"p"}>
+            <a
+              href={samplePortfolio.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {samplePortfolio.githubLink}
+            </a>
+          </Typography>
         </Box>
       </Container>
     </div>
