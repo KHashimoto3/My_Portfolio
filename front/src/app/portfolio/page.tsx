@@ -1,8 +1,7 @@
 "use client";
 
-import { Box, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import StyledHeading2 from "../_ui/header/styledHeading2";
-import { Style } from "@mui/icons-material";
 
 export default function Portfolio() {
   return (
