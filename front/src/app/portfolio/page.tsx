@@ -1,6 +1,8 @@
 "use client";
 
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
+import StyledHeading2 from "../_ui/header/styledHeading2";
+import { Style } from "@mui/icons-material";
 
 export default function Portfolio() {
   return (
@@ -37,15 +39,11 @@ export default function Portfolio() {
             </Box>
           </Grid>
           <Grid item xs={6}>
-            <Typography variant="h6" component={"h2"}>
-              ＜概要＞
-            </Typography>
+            <StyledHeading2 title="概要" />
             <Typography variant="body1" component={"p"}>
               このプロダクトは、サンプルのポートフォリオです。
             </Typography>
-            <Typography variant="h6" component={"h2"}>
-              ＜機能＞
-            </Typography>
+            <StyledHeading2 title="機能" />
             <Typography variant="body1" component={"p"}>
               ・サンプルの機能1
               <br />
@@ -54,9 +52,7 @@ export default function Portfolio() {
               ・サンプルの機能3
               <br />
             </Typography>
-            <Typography variant="h6" component={"h2"}>
-              ＜使用技術＞
-            </Typography>
+            <StyledHeading2 title="使用技術" />
             <Typography variant="body1" component={"p"}>
               ・サンプルの技術1
               <br />
@@ -65,15 +61,11 @@ export default function Portfolio() {
               ・サンプルの技術3
               <br />
             </Typography>
-            <Typography variant="h6" component={"h2"}>
-              ＜開発期間＞
-            </Typography>
+            <StyledHeading2 title="開発期間" />
             <Typography variant="body1" component={"p"}>
               2023年1月~2023年12月
             </Typography>
-            <Typography variant="h6" component={"h2"}>
-              ＜担当業務＞
-            </Typography>
+            <StyledHeading2 title="役割" />
             <Typography variant="body1" component={"p"}>
               ・サンプルの業務1
               <br />
