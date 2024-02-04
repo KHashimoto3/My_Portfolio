@@ -1,6 +1,7 @@
 export type Portfolio = {
   id: number;
   title: string;
+  tag: string[];
   imgPath: string;
   abstract: string;
   background: string;
