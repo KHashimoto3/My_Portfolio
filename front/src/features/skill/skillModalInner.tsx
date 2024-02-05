@@ -3,8 +3,8 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import SkillCard from "./skillCard";
-import { SkillList } from "../types/skillList";
-import { SkillKinds } from "../types/skillKinds";
+import { SkillList } from "@/types/skillList";
+import { SkillKinds } from "@/types/skillKinds";
 
 type Props = {
   kinds: SkillKinds;

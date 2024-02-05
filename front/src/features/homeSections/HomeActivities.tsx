@@ -1,8 +1,8 @@
 "use client";
 
 import { Box, Container, Grid } from "@mui/material";
-import { ActivityList } from "../types/activityList";
-import ActivityCard from "../_activity-components/activityCard";
+import { ActivityList } from "@/types/activityList";
+import ActivityCard from "../activitiy/activityCard";
 import SectionTitle from "@/components/header/sectionTitle";
 
 export default function HomeActivities() {

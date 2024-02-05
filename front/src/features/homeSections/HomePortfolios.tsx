@@ -1,8 +1,8 @@
 "use client";
 
 import { Container, Grid } from "@mui/material";
-import PortfolioCard from "../_portfolio-components/portfolioCard";
-import { PortfolioList } from "../types/portfolioList";
+import PortfolioCard from "../portfolio/portfolioCard";
+import { PortfolioList } from "@/types/portfolioList";
 import SectionTitle from "@/components/header/sectionTitle";
 
 export default function HomePortfolios() {

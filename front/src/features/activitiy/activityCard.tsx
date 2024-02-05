@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Stack } from "@mui/material";
-import { ActivityList } from "../types/activityList";
+import { ActivityList } from "@/types/activityList";
 
 type Props = {
   activity: ActivityList;

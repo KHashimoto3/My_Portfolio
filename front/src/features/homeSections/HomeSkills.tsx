@@ -1,9 +1,9 @@
 "use client";
 
 import { Container, Modal, Stack, Typography } from "@mui/material";
-import SkillModalInner from "../_skill-components/skillModalInner";
+import SkillModalInner from "../skill/skillModalInner";
 import { useState } from "react";
-import { SkillKinds } from "../types/skillKinds";
+import { SkillKinds } from "@/types/skillKinds";
 import OpenSkillModalButton from "@/components/button/openSkillModalButton";
 import SectionTitle from "@/components/header/sectionTitle";
 

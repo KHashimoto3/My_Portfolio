@@ -1,8 +1,8 @@
-import HomeAboutMe from "./_home-sections/HomeAboutMe";
-import HomeActivities from "./_home-sections/HomeActivities";
-import HomeContact from "./_home-sections/HomeContact";
-import HomePortfolios from "./_home-sections/HomePortfolios";
-import HomeSkills from "./_home-sections/HomeSkills";
+import HomeAboutMe from "@/features/homeSections/HomeAboutMe";
+import HomeActivities from "@/features/homeSections/HomeActivities";
+import HomeContact from "@/features/homeSections/HomeContact";
+import HomePortfolios from "@/features/homeSections/HomePortfolios";
+import HomeSkills from "@/features/homeSections/HomeSkills";
 
 export default function Home() {
   return (
