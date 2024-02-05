@@ -3,7 +3,7 @@
 import { Button, Container, Stack, Typography } from "@mui/material";
 
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import SectionTitle from "../_ui/header/sectionTitle";
+import SectionTitle from "@/components/header/sectionTitle";
 
 export default function HomeContact() {
   return (

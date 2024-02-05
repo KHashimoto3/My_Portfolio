@@ -4,8 +4,8 @@ import { Container, Modal, Stack, Typography } from "@mui/material";
 import SkillModalInner from "../_skill-components/skillModalInner";
 import { useState } from "react";
 import { SkillKinds } from "../types/skillKinds";
-import OpenSkillModalButton from "../_ui/button/openSkillModalButton";
-import SectionTitle from "../_ui/header/sectionTitle";
+import OpenSkillModalButton from "@/components/button/openSkillModalButton";
+import SectionTitle from "@/components/header/sectionTitle";
 
 export default function HomeSkills() {
   const [skillModalOpen, setSkillModalOpen] = useState<boolean>(false);

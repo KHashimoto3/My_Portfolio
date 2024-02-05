@@ -8,7 +8,7 @@ import {
   Chip,
   Typography,
 } from "@mui/material";
-import PortfolioDetailButton from "../_ui/button/portfolioDetailButton";
+import PortfolioDetailButton from "@/components/button/portfolioDetailButton";
 
 type Props = {
   title: string;
